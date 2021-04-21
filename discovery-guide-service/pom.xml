@@ -162,6 +162,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
                 <configuration>
                     <imageName>${ImageName}</imageName>
                     <baseImage>openjdk:8-jre-alpine</baseImage>
@@ -181,6 +182,7 @@
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
+                <version>${git.commit.id.plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
